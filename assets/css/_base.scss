@@ -1,0 +1,53 @@
+*{
+    border:0;
+    padding:0;
+    margin:0;
+
+}
+
+//-------------------fonts-------------------------//
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@300;400;600;700;800&family=Teko:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+$rubikmo: 'Rubik Mono One', sans-serif;
+$rubik: 'Rubik', sans-serif;
+$teko: 'Teko', sans-serif;
+
+//------------------color------------------------//
+$white:#FFFFFF;
+$yellow:#FFCC00;
+$dpurple:#7357b6;
+$bpink:#cb10e7;
+$pink:#F0B5F9;
+$ablack:#242424;
+$bggrad: linear-gradient(180deg, $dpurple 1.60%,  $bpink 59.37%, $pink 97.4%);
+
+//--------------------mixins---------------------//
+@mixin mbars {
+    color:$pink;
+    position: absolute;
+    top:2em;
+    left:1em;
+    font-size: 2em;
+    
+}
+//---------------breakpoints--------------------//
+$screen-med-min:35em;
+$screen-lar-min:45em;
+$screen-xlar-min:55em;
+
+@mixin breakpoint-medium {
+    @media (min-width: #{$screen-med-min}){
+        @content;
+    }
+}
+@mixin breakpoint-large {
+    @media (min-width: #{$screen-lar-min}){
+        @content;
+    }
+}
+@mixin breakpoint-xlarge {
+    @media (min-width: #{$screen-xlar-min}){
+        @content;
+    }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@300;400;600;700;800&family=Teko:wght@300;400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.navcontainer {
+  display: none;
+  width: 100%;
+  min-height: 70vh;
+  background-image: url("/assets/img/plasticmind.png");
+  background-size: cover;
+}
+
+.navcontainer .fa-bars {
+  color: #F0B5F9;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  font-size: 2em;
+}
+
+.navcontainer .menu {
+  font-size: 4em;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 2em;
+}
+
+.navcontainer .menu a {
+  color: #F0B5F9;
+  text-decoration: none;
+}
+
+.navcontainer .menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .5em;
+  color: #F0B5F9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5em 3em 1em 3em;
+}
+
+.section.intr {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1.6%, #7357b6), color-stop(59.37%, #cb10e7), color-stop(97.4%, #F0B5F9));
+  background-image: linear-gradient(180deg, #7357b6 1.6%, #cb10e7 59.37%, #F0B5F9 97.4%);
+  min-height: 70vh;
+}
+
+.section.intr .circle {
+  background-color: 0;
+  width: 3em;
+  height: 3em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+@import './base';
+   
+.navcontainer{
+    display: none;
+    width:100%;
+    min-height:70vh;
+    background-image: url('/assets/img/plasticmind.png');
+    background-size: cover;
+
+ .fa-bars{
+    @include mbars;
+ }
+ .menu {
+     font-size: 4em;
+     font-family:$teko;
+     text-align: center;
+     font-weight: 300;
+     padding-top: 2em;
+     a{
+        color:$pink; 
+        text-decoration: none; 
+     }
+     .links{
+         display: flex;
+         font-size: .5em;
+         color: $pink;
+         justify-content: space-between;
+         padding:5em 3em 1em 3em;
+     }
+
+ }
+}
+.section.intr{
+    background-image: $bggrad;
+    min-height:70vh;
+    .circle{
+        background-color: red($color: #000000);
+        width: 3em;
+        height:3em;
+    }
+}
